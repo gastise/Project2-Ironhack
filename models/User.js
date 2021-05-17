@@ -5,6 +5,11 @@ const UserSchema = new Schema(
   {
     firstName: String,
     lastName: String,
+    userName: {
+      type: String,
+      unique: true,
+      required: true,
+    },
     // code for password and email taken from day-3 simple-auth-app example
     email: {
       type: String,
@@ -26,13 +31,13 @@ const UserSchema = new Schema(
       default:
         "https://thumbs.dreamstime.com/b/default-avatar-profile-icon-social-media-user-vector-default-avatar-profile-icon-social-media-user-vector-portrait-176194876.jpg",
     },
-    phoneNumber: String,
-    streetAddress: String,
+    phoneNumber: String, // only for purchase
+    streetAddress: String, // only for purchase
     city: String,
     zipCode: String,
     description: String,
-    bankName: String,
-    bankAccountNumber: String,
+    bankName: String, // only for vendors
+    bankAccountNumber: String, // only for vendors
     isAdmin: Boolean,
 },
   { timestamps: true }
