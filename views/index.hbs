@@ -2,4 +2,17 @@
 
     <img src="/images/woman_chiapas.jpg" alt="Woman Chiapas" height="250px" width="350px">
 
+    <div>
+      {{#each products}}
+      <div>
+        <p>{{this.name}}</p>
+        <p>{{this.category}}</p>
+        <p>{{this.description}}</p>
+        <img src="{{this.photo}}">
+        <p>${{this.price}}</p>
+        <p>Stock remaining</p>
+      </div>
+      {{/each}}
+    </div>
+
 
