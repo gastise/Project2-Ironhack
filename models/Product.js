@@ -17,7 +17,7 @@ const ProductSchema = new Schema(
     },
     price: Number,
     itemsRemaining: Number,
-    vendorId:{ type: Schema.Types.ObjectId, ref: "user" },
+    vendorId: { type: Schema.Types.ObjectId, ref: "user" },
 },
   { timestamps: true }
 );
