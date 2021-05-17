@@ -6,18 +6,18 @@
   {{#if msg}}
   <p class="message {{msg.status}}">{{msg.text}}</p>
   {{/if}}
-  <form method="post" action="/signup" id="form_user">
+  <form method="post" action="/signup" id="form_user" enctype="multipart/form-data">
     <div class="form-item-wrapper flexed-item">
-      <label for="firstname" class="label-ref label">Name</label>
-      <input id="firstname" type="text" class="input-text input" name="name">
+      <label for="firstName" class="label-ref label">First Name</label>
+      <input id="firstName" type="text" class="input-text input" name="firstName">
     </div>
     <div class="form-item-wrapper flexed-item">
-      <label for="telephone" class="label-ref label">Telephone Number</label>
-      <input id="telephone" type="number" class="input-text input" name="telephone">
+      <label for="lastName" class="label-ref label">Last Name</label>
+      <input id="lastName" type="text" class="input-text input" name="lastName">
     </div>
     <div class="form-item-wrapper flexed-item">
-      <label for="address" class="label-ref label">Address</label>
-      <input id="address" type="text" class="input-text input" name="address">
+      <label for="userName" class="label-ref label">User Name</label>
+      <input id="userName" type="text" class="input-text input" name="userName">
     </div>
     <div class="form-item-wrapper flexed-item">
       <label for="email" class="label-ref label">Email</label>
@@ -27,6 +27,43 @@
       <label for="password" class="label-ref label">Password</label>
       <input id="password" type="password" class="input-text input" name="password">
     </div>
+    <div class="form-item-wrapper flexed-item">
+    <label for="picture" class="label-ref label">Picture</label>
+    <input id="picture" type="file" class="input-text input" name="picture">
+    </div>
+    <div class="form-item-wrapper flexed-item">
+      <label for="telephone" class="label-ref label">Telephone Number</label>
+      <input id="telephone" type="number" class="input-text input" name="telephone">
+    </div>
+    <div class="form-item-wrapper flexed-item">
+      <label for="streetAddress" class="label-ref label">Street Address</label>
+      <input id="streetAddress" type="text" class="input-text input" name="streetAddress">
+    </div>
+    <div class="form-item-wrapper flexed-item">
+      <label for="city" class="label-ref label">City</label>
+      <input id="city" type="text" class="input-text input" name="city">
+    </div>
+    <div class="form-item-wrapper flexed-item">
+      <label for="zipCode" class="label-ref label">Zip Code</label>
+      <input id="zipCode" type="text" class="input-text input" name="zipCode">
+    </div>
+    <div class="form-item-wrapper flexed-item">
+      <label for="description" class="label-ref label">About Me</label>
+      <input id="description" type="text" class="input-text input" name="description">
+    </div>
+    <div class="form-item-wrapper flexed-item">
+      <label for="bankName" class="label-ref label">Bank Name</label>
+      <input id="bankName" type="text" class="input-text input" name="bankName">
+    </div>
+    <div class="form-item-wrapper flexed-item">
+      <label for="accountNumber" class="label-ref label">Bank Account Number</label>
+      <input id="accountNumber" type="text" class="input-text input" name="accountNumber">
+    </div>
+    <div class="form-item-wrapper flexed-item">
+      <label for="isAdmin" class="label-ref label">Admin</label>
+      <input id="isAdmin" type="checkbox" class="input-text input" name="isAdmin">
+    </div>
+
     <button class="button-primary white">Create Account</button>
   </form>
   <p class="form-sub-infos">Already have an account ? <a href="/signin" class="button-link-form">Sign In</a></p>
