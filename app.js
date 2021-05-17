@@ -1,11 +1,9 @@
-
-
-
+require("dotenv").config();
+require("./config/mongo")
 
 // base dependencies
 const express = require("express");
 const hbs = require("hbs");
-const mongoose = require("mongoose");
 const app = express();
 
 
@@ -19,7 +17,10 @@ app.set("view engine", "hbs");
 // routers
 
 const index = require('./routes/index');
+const productRouter = require("./routes/product");
+
 app.use('/', index);
+app.use("/dashboard", productRouter); // use product router
 
 
 

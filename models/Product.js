@@ -10,6 +10,11 @@ const ProductSchema = new Schema(
       enum: ['Home & Living', 'Clothing & Shoes', 'Accessories', 'Personal Care', 'Food & Beverage'],
     },
     description: String,
+    photo: {
+      type: String,
+      default:
+        "https://thumbs.dreamstime.com/b/default-avatar-profile-icon-social-media-user-vector-default-avatar-profile-icon-social-media-user-vector-portrait-176194876.jpg",
+    },
     price: Number,
     itemsRemaining: Number,
 },

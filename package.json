@@ -19,9 +19,13 @@
   "homepage": "https://github.com/gastise/Project2-Ironhack#readme",
   "description": "",
   "dependencies": {
+    "cloudinary": "^1.25.1",
+    "dotenv": "^9.0.2",
     "express": "^4.17.1",
     "hbs": "^4.1.2",
     "mongoose": "^5.12.9",
+    "multer": "^1.4.2",
+    "multer-storage-cloudinary": "^4.0.0",
     "node": "^16.1.0"
   }
 }
