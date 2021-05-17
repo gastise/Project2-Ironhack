@@ -7,7 +7,7 @@ const ProductSchema = new Schema(
     category: {
       type: String,
       required: true,
-      enum: ['Home', 'Clothing & Shoes', 'Accessories', 'Personal Care', 'Art', 'Food & Beverage'],
+      enum: ['Home & Living', 'Clothing & Shoes', 'Accessories', 'Personal Care', 'Food & Beverage'],
     },
     description: String,
     price: Number,
