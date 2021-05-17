@@ -30,6 +30,19 @@ router.get("/", (req, res) => {
     });
   
 
+    // GET - FAQ
+
+    router.get("/faq", (req, res) => {
+      res.render("faq.hbs");
+    });
+
+
+    // GET - CONTACT
+
+    router.get("/contact", (req, res) => {
+      res.render("contact.hbs");
+    });
+
 
   // GET - LOGIN
 
