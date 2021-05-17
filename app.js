@@ -19,7 +19,10 @@ app.set("view engine", "hbs");
 // routers
 
 const index = require('./routes/index');
+const productRouter = require("./routes/product");
+
 app.use('/', index);
+app.use("/dashboard/product", productRouter); // use product router
 
 
 
