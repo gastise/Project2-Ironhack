@@ -6,10 +6,6 @@ const UserSchema = new Schema(
     firstName: String,
     lastName: String,
     // code for password and email taken from day-3 simple-auth-app example
-    password: {
-      type: String,
-      required: true,
-    },
     email: {
       type: String,
       unique: true,
@@ -20,6 +16,10 @@ const UserSchema = new Schema(
           )
         );
       },
+    },
+    password: {
+      type: String,
+      required: true,
     },
     photo: {
       type: String,
