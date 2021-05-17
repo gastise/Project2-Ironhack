@@ -1,4 +1,5 @@
 const express = require("express");
+const ProductModel = require("../models/Product");
 const router = express.Router();
 
 // const bcrypt = require("bcrypt");
@@ -6,15 +7,19 @@ const router = express.Router();
 
 // const Category = require("../models/Category");
 // const Order = require("../models/Order");
-// const Product = require("../models/Product");
 // const User = require("../models/User");
 
 
 // GET - HOME
-router.get("/", (req, res) => {
-    res.render("index.hbs");
+router.get("/", async (req, res, next) => {
+  try {
+    res.render("index.hbs", {
+      products: await ProductModel.find(),
+    });
+  } catch (err) {
+    next(err);
+  }
   });
-
 
   // GET - HOME & LIVING
 
