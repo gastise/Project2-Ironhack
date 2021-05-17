@@ -3,12 +3,22 @@ const Schema = mongoose.Schema;
 
 const UserSchema = new Schema(
   {
-    id: String,
-    name: String,
-    telephone: Number,
-    address: String,
-    email: String,
-    // bankDetails: 
+    firstName: String,
+    lastName: String,
+    emailAddress: String,
+    phoneNumber: String,
+    streetAddress: String,
+    city: String,
+    zipCode: String,
+    photo: {
+      type: String,
+      default:
+        "https://thumbs.dreamstime.com/b/default-avatar-profile-icon-social-media-user-vector-default-avatar-profile-icon-social-media-user-vector-portrait-176194876.jpg",
+    },
+    description: String,
+    bankName: String,
+    bankAccountNumber: String,
+    isAdmin: Boolean,
 },
   { timestamps: true }
 );
@@ -16,3 +26,4 @@ const UserSchema = new Schema(
 const UserModel = mongoose.model("user", UserSchema);
 
 module.exports = UserModel;
+
