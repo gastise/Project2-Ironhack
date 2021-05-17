@@ -3,6 +3,13 @@
     flex-direction: row;
     background-color: #8BD7FF;
 }
+.nav2 a,.nav1 a{
+  text-decoration:none;
+  color:black;
+}
+.nav2 a {
+  text-decoration:none;
+}
 
 .nav2 {
     background-color: #BFE8F2;
@@ -72,4 +79,7 @@ body{
   cursor: pointer;
   font-size: 20px;
 }
-
+.logo{
+  width: 60px;
+  height: 60px;
+}
