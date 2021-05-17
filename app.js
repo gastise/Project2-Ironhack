@@ -1,11 +1,9 @@
-
-
-
+require("dotenv").config();
+require("./config/mongo")
 
 // base dependencies
 const express = require("express");
 const hbs = require("hbs");
-const mongoose = require("mongoose");
 const app = express();
 
 
