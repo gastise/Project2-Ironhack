@@ -16,11 +16,37 @@ router.get("/", (req, res) => {
   });
 
 
-  // GET - MARKET
+  // GET - HOME & LIVING
 
-  router.get("/market", (req, res) => {
-    res.render("market.hbs");
+  router.get("/home&living", (req, res) => {
+    res.render("home&living.hbs");
   });
+
+  // GET - PERSONAL CARE
+
+  router.get("/personalcare", (req, res) => {
+    res.render("personalcare.hbs");
+  });
+
+  // GET - CLOTHING & SHOES
+
+  router.get("/clothing&shoes", (req, res) => {
+    res.render("clothing&shoes.hbs");
+  });
+
+    // GET - ACCESSORIES
+
+    router.get("/accessories", (req, res) => {
+      res.render("accessories.hbs");
+    });
+
+      // GET - FOOD & BEVERAGES
+
+  router.get("/food&beverages", (req, res) => {
+    res.render("food&beverages.hbs");
+  });
+
+
 
 
     // GET - ABOUT US
