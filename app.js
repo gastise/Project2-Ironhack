@@ -22,7 +22,7 @@ const index = require('./routes/index');
 const productRouter = require("./routes/product");
 
 app.use('/', index);
-app.use("/dashboard/product", productRouter); // use product router
+app.use("/dashboard", productRouter); // use product router
 
 
 
