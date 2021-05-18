@@ -15,7 +15,7 @@ const users = [
         streetAddress: "123", // only for purchase
         city: "Mexico",
         zipCode: "01020 Álvaro Obregón",
-        description: "I was born in Toluca Mexico and I make Paraben-free soaps  and organic honey.Check my product collection!", 
+        description: "I was born in Toluca Mexico and I make Paraben-free soaps and dolls.Check my product collection!", 
         bankName: "Banorte", // only for vendors
         bankAccountNumber: "999", // only for vendors
         isAdmin: false,
