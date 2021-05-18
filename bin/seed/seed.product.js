@@ -70,6 +70,14 @@ const products = [
     price: 15,
     itemsRemaining: 2,
   }, 
+  {
+    photo: "https://images1.novica.net/pictures/7/p327200_2.jpg",
+    name: "Huichol beaded necklace",
+    category: "Accessories",
+    description: "This hand-beaded necklace in the huichol tradition is a beautiful statement piece. Your purchase goes directly to indigenous artisans in Nayarit.",
+    price: 80,
+    itemsRemaining: 1,
+  }, 
 ];
 
 (async function insertProducts() {
