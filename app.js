@@ -17,10 +17,12 @@ app.set("view engine", "hbs");
 // routers
 
 const index = require('./routes/index');
-const productRouter = require("./routes/product");
+const dashboardRouter = require("./routes/dashboard");
+const userRouter = require("./routes/user");
 
 app.use('/', index);
-app.use("/dashboard", productRouter); // use product router
+app.use("/dashboard", dashboardRouter); // use product router
+app.use("/", userRouter); // use user router
 
 
 

@@ -1,19 +1,19 @@
 <div>
-      {{#each user}}
-      <div style="border: 1px solid black">
-        <p>`About me: {{this.userName}} from {{this.city}}` </p>
-        <img src={{this.photo}} alt={{this.userName}} height="250px" width="350px">
+      <div class="infobox" style="border: 1px solid black">
+        <p>About me: {{vendor.firstName}} from {{vendor.city}}</p>
+        <img src={{vendor.photo}} alt={{vendor.userName}} height="250px" width="350px">
         <a href="#">back to the item</a>
-        <p>{{this.description}}</p>
-        <p>Only {{this.itemsRemaining}} left in stock</p>
+        <p>{{vendor.description}}</p>
+        <p>Only {{vendor.itemsRemaining}} left in stock</p>
       </div>
     </div>
-     <div>
-         <p>Goods from {{this.userName}}</p>
-     {{/each}}
+     <div style="border: 1px solid black">
+         <p>Goods from {{vendor.userName}}</p>
+
+
 
       {{#each products}}
-      <div style="border: 1px solid black">
+      <div class="infobox" style="border: 1px solid black">
         <p>{{this.name}}</p>
         <p>{{this.photo}}</p>
 

@@ -1,8 +1,8 @@
 const express = require("express");
 const router = new express.Router();
-const ProductModel = require("./../models/Product");
-const UserModel = require("./../models/User");
-const uploader = require("./../config/cloudinary");
+const ProductModel = require("../models/Product");
+const UserModel = require("../models/User");
+const uploader = require("../config/cloudinary");
 
 router.get("/", async (req, res, next) => {
   const vendor = await UserModel.findOne({ _id: "60a38d60683e92586f20e0e4" })

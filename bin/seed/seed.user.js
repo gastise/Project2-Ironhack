@@ -10,7 +10,7 @@ const users = [
         userName: "AlmaR",
         email: "alma@gmail.com",
         password: "a123",
-        photo: "../../public/images/artisan_profile_1.jpg",
+        photo: "/images/artisan_profile_1.jpg",
         phoneNumber: "999", // only for purchase""
         streetAddress: "123", // only for purchase
         city: "Mexico",
@@ -26,7 +26,7 @@ const users = [
         userName: "HectorP",
         email: "hector@gmail.com",
         password: "h123",
-        photo: "../../public/images/man_with_pottery.jpg",
+        photo: "/images/man_with_pottery.jpg",
         phoneNumber: "888", // only for purchase""
         streetAddress: "123", // only for purchase
         city: "Mexico",

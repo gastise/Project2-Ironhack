@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
 .nav1 {
     display: flex;
     flex-direction: row;
@@ -37,9 +39,6 @@
     background-color: #F1ED63;
     margin-bottom: 0px;
 }
-
-
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
 body{
   background: #f2f2f2;
@@ -82,4 +81,8 @@ body{
 .logo{
   width: 60px;
   height: 60px;
+}
+.infobox{
+  background: rgb(0,180,204);
+  background: linear-gradient(90deg, rgba(0,180,204,1) 7%, rgba(0,212,255,1) 100%);
 }
