@@ -18,6 +18,7 @@ const products = [
     description: "This 100% organic and antiseptic soap has been produced for generations by a family of artisans in Tabasco using local products and traditions. Great as an everyday hand soap, but also recommended for acne, exfoliation, and oily skin.",
     price: 10,
     itemsRemaining: 0,
+    vendorId: "60a38d60683e92586f20e0e3",
   },
   {
     photo: "https://res.cloudinary.com/dsejfuqxw/image/upload/v1621274168/uo04vc3uwyg7fqrdo80e.jpg",
@@ -42,6 +43,7 @@ const products = [
     description: "Mexican Yucatan Honey is a bright honey with flavors of peppermint, raisin and caramel. Collected from the orchards outside of Merida, Mexico it is a great addition for your preparations, cakes and recipes.",
     price: 12,
     itemsRemaining: 4,
+    vendorId: "60a38d60683e92586f20e0e4",
   },  
   {
     photo: "https://res.cloudinary.com/dsejfuqxw/image/upload/v1621274725/g8z5sejax6paljywsrhk.jpg",
@@ -50,6 +52,7 @@ const products = [
     description: "This Organic Mexican coffee will sweep you off your feet with its strong body with sweet touches of flowery scents and low acidity It is the perfect addition for your morning routine and start a good day!",
     price: 10,
     itemsRemaining: 2,
+    vendorId: "60a38d60683e92586f20e0e4",
   },  
   {
     photo: "https://res.cloudinary.com/dsejfuqxw/image/upload/v1621274843/l4nl5hz6srkoom6dt4ik.jpg",
