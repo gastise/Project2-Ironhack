@@ -4,7 +4,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon ./app.js -e .js,.hbs"
+    "dev": "nodemon ./app.js -e .js,.hbs",
+    "seed:product": "node ./bin/seed/seed.product.js",
+    "seed:all": "npm run seed:product"
   },
   "repository": {
     "type": "git",
