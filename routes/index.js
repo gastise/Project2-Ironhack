@@ -2,6 +2,9 @@ const express = require("express");
 const ProductModel = require("../models/Product");
 const router = express.Router();
 
+/*require the Artetic user protect route under here: 
+const protectPrivateRoute = require("../middlewares/protectPrivateRoute");*/
+
 // const bcrypt = require("bcrypt");
 // const protectPrivateRoute = require("../middlewares/protectPrivateRoute.js");
 

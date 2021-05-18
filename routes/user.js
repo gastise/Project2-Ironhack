@@ -14,10 +14,10 @@ router.get("/product/:id", async (req, res, next) => {
     }
     });
 
-//GET - display the vendor's details
-router.get("/vendorpage", async (req, res, next) => {
-    const vendor = await UserModel.findOne({ _id: "60a38d482d399a12cbf43d43" })
-    const products = await ProductModel.find({ vendorId: "60a38d482d399a12cbf43d43"})
+//GET - display the vendor's details (from a product page)
+router.get("/vendor/:id", async (req, res, next) => {
+    const vendor = await UserModel.findById(req.params.id)//go into the user model and find the user that has this id (req.params.id)
+    const products = await ProductModel.find({vendorId:req.params.id})// go into the product model and find all the products whose the vendorId equals this id (req.params.id)
     console.log(vendor);
     console.log(products);
     try {
