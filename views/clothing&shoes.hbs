@@ -1,1 +1,13 @@
-<h1>Clothing & Shoes</h1>
+<div>
+    <h1>Clothing & Shoes - {{products.length}} items</h1>
+
+    <div>
+        {{#each products}}
+        <div style="background: url('{{this.photo}}');">
+            <a href="/artisan/{{this._id}}">
+                {{this.name}}
+            </a>
+        </div>
+    </div>
+    {{/each}}
+</div>
