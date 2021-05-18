@@ -9,9 +9,10 @@
     <p>{{this.name}}</p>
     <p>{{this.category}}</p>
     <img style="height: 200px;" src="{{this.photo}}">
+    <p>{{this.description}}</p>
     <p>${{this.price}}</p>
     <p>Only {{this.itemsRemaining}} left in stock</p>
-    <a href="#">Update this product</a>
+    <a href="dashboard/update/{{this.id}}">Update this product</a>
     <a href="#">Delete this product</a>
   </div>
 {{/each}}

@@ -14,6 +14,15 @@ router.get("/", async (req, res, next) => {
   }
   });
 
+router.get("/update/:id", async (req, res, next) => {
+  const product = await ProductModel.findById(req.params.id)
+  try {
+    res.render("dashboard/productUpdate", product);
+  } catch (err) {
+    next(err);
+  }
+});
+
 router.get("/create", (req, res) => {
   res.render("dashboard/productCreate");
 });
