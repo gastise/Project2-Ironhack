@@ -7,11 +7,11 @@
 
     <label for="category">Category: </label>
     <select name="category" id="category" class="input">
-        <option value="Home & Living">Home & Living</option>
-        <option value="Clothing & Shoes">Clothing & Shoes</option>
-        <option value="Accessories">Accessories</option>
-        <option value="Personal Care">Personal Care</option>
-        <option value="Food & Beverage" selected>Food & Beverage</option>
+        <option value="Home & Living" {{isSelected "Home & Living" this.category}}>Home & Living</option>
+        <option value="Clothing & Shoes" {{isSelected "Clothing & Shoes" this.category}}>Clothing & Shoes</option>
+        <option value="Accessories" {{isSelected "Accessories" this.category}}>Accessories</option>
+        <option value="Personal Care" {{isSelected "Personal Care" this.category}}>Personal Care</option>
+        <option value="Food & Beverage" {{isSelected "Food & Beverage" this.category}}>Food & Beverage</option>
     </select>
 
     <label for="description" class="label">Description: </label>
