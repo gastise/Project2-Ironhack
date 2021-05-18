@@ -4,6 +4,10 @@ const ProductModel = require("./../models/Product");
 const UserModel = require("./../models/User");
 const uploader = require("./../config/cloudinary");
 
+router.get("/", (req, res) => {
+  res.render("dashboard/dashboard");
+});
+
 router.get("/create", (req, res) => {
   res.render("dashboard/productCreate");
 });

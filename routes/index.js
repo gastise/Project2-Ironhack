@@ -73,7 +73,7 @@ router.get("/accessories", async (req, res, next) => {
 router.get("/food-beverages", async (req, res, next) => {
   try {
     res.render("food&beverages.hbs", {
-      products: await ProductModel.find({ category: "Food & Beverages" })
+      products: await ProductModel.find({ category: "Food & Beverage" })
     });
   } catch (err) {
     next(err);
