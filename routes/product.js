@@ -37,6 +37,16 @@ router.post("/update/:id", uploader.single("cover"), async (req, res, next) => {
   }
 });
 
+// GET - delete one product
+router.get("/delete/:id", async (req, res, next) => {
+  try {
+    await ProductModel.findByIdAndRemove(req.params.id);
+    res.redirect("/dashboard");
+  } catch (err) {
+    next(err);
+  }
+});
+
 // GET - create one product
 router.get("/create", (req, res) => {
   res.render("dashboard/productCreate");
