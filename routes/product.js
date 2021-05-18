@@ -4,9 +4,15 @@ const ProductModel = require("./../models/Product");
 const UserModel = require("./../models/User");
 const uploader = require("./../config/cloudinary");
 
-router.get("/", (req, res) => {
-  res.render("dashboard/dashboard");
-});
+router.get("/", async (req, res, next) => {
+  const vendor = await UserModel.findOne({ _id: "60a38d60683e92586f20e0e4" })
+  const products = await ProductModel.find({ vendorId: "60a38d60683e92586f20e0e4"})
+  try {
+    res.render("dashboard/dashboard", { vendor, products });
+  } catch (err) {
+    next(err);
+  }
+  });
 
 router.get("/create", (req, res) => {
   res.render("dashboard/productCreate");

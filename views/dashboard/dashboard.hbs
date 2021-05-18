@@ -1,6 +1,20 @@
 <h1>Vendor dashboard</h1>
-<p>Welcome, userName goes here!</p>
+
+<p>Welcome, {{vendor.userName}}!</p>
+<img src="{{this.photo}}" style="height: 200px;">
 <h2>Your products</h2>
-{{!-- Show all products associated with this vendor, give option to update and delete products --}}
+<div>
+{{#each products}}
+  <div style="border: 1px solid black">
+    <p>{{this.name}}</p>
+    <p>{{this.category}}</p>
+    <img style="height: 200px;" src="{{this.photo}}">
+    <p>${{this.price}}</p>
+    <p>Only {{this.itemsRemaining}} left in stock</p>
+    <a href="#">Update this product</a>
+    <a href="#">Delete this product</a>
+  </div>
+{{/each}}
+</div>
 <h2>Add a new product</h2>
 <p>Click <a href="/dashboard/create">here</a> to offer a new product for sale!</p>
