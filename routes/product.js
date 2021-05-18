@@ -14,6 +14,7 @@ router.get("/", async (req, res, next) => {
   }
   });
 
+// GET - update one product
 router.get("/update/:id", async (req, res, next) => {
   const product = await ProductModel.findById(req.params.id)
   try {
@@ -23,10 +24,25 @@ router.get("/update/:id", async (req, res, next) => {
   }
 });
 
+// POST - update one product
+router.post("/update/:id", uploader.single("cover"), async (req, res, next) => {
+  try {
+    const productToUpdate = { ...req.body };
+    if (req.file) productToUpdate.photo = req.file.path;
+
+    await ProductModel.findByIdAndUpdate(req.params.id, productToUpdate);
+    res.redirect("/dashboard");
+  } catch (err) {
+    next(err);
+  }
+});
+
+// GET - create one product
 router.get("/create", (req, res) => {
   res.render("dashboard/productCreate");
 });
 
+// POST - create one product
 router.post("/create", uploader.single("photo"), async (req, res, next) => {
   const newProduct = { ...req.body };
 
