@@ -11,10 +11,11 @@ const router = express.Router();
 
 // GET - HOME
 router.get("/", async (req, res, next) => {
+  let regex = new RegExp(req.query.searchbar,"gi")
   try {
     res.render("index.hbs", {
-      products: await ProductModel.find(),
-    });
+      products: await ProductModel.find({$or: [{name: regex },{description: regex}]})
+    })
   } catch (err) {
     next(err);
   }
