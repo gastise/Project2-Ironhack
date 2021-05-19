@@ -1,24 +1,29 @@
+/*FULL DOCUMENT STYLING*/
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
-*/
-/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap'); */
 * {
   border: none;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+body {
+  background: #f2f2f2;
+  font-family: "Open Sans", sans-serif;
+}
+
+/*NAV BAR STYLING*/
 .nav1 {
+  height:20vh;
   background-color: #8bd7ff;
+  font-size: 20px;
 }
 .nav2 {
-  background-color: #bfe8f2;
-}
-.nav2 {
-  height: 50px;
+  height: 10vh;
   font-weight: bold;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #bfe8f2;
 }
 .logo {
   width: 80x;
@@ -39,24 +44,13 @@
 .buttoNav {
   background-color: #f1ed63;
   padding: 5px 15px;
-  border-radius: 48%;
+  border-radius: 35%;
+  float:left;
 }
 .vendorProfile {
   background-color: #f1ed63;
   padding: 5px 15px;
-  border-radius: 48%;
-}
-.footer {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: flex-end;
-  background-color: #f1ed63;
-  margin-bottom: 0px;
-}
-
-body {
-  background: #f2f2f2;
-  font-family: "Open Sans", sans-serif;
+  border-radius: 40%;
 }
 
 .search {
@@ -92,6 +86,7 @@ body {
   cursor: pointer;
   font-size: 20px;
 }
+/*VENDOR DETAILS STYLING*/
 .infobox {
   background: linear-gradient(
     90deg,
@@ -200,4 +195,21 @@ textarea {
 .button-block {
   display:block;
   width:50%;
+
+  
+/*FOOTER STYLING*/
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #bfe8f2;
+  height: 10vh;
+  margin-bottom: 0px;
+}
+.footer a{
+  margin: 10px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  margin-right: 40px;
 }
