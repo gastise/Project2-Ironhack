@@ -1,72 +1,107 @@
-<section class="sign form-container">
-  <header class="form-header">
-    <h1 class="form-title">Sign Up</h1>
-    <p class="form-subtitle">We can't wait for you to enjoy all the unique Mexican products!</p>
-  </header>
+<section>
   {{#if msg}}
   <p class="message {{msg.status}}">{{msg.text}}</p>
   {{/if}}
-  <form method="post" action="/signup" id="form_user" enctype="multipart/form-data">
-    <div class="form-item-wrapper flexed-item">
+
+<div class="form">
       
-      <label for="firstName" class="label-ref label">First Name</label>
-      <input id="firstName" type="text" class="input-text input" name="firstName" required placeholder="First Name">
+      <div class="tab-content">
+        <div id="signup">   
+          <h1>Sign Up for Free</h1>
+          
+          <form action="/login" method="post" enctype="multipart/form-data">
+          
+          <div class="top-row">
+            <div class="field-wrap">
+             <label for="firstName">First Name
+              </label>
+      <input id="firstName" type="text" name="firstName" required placeholder="First Name">
+            </div>
+        
+            <div class="field-wrap">
+              <label for="lastName">Last Name
+              </label>
+                    <input id="lastName" type="text" class="input-text input" name="lastName" required placeholder="Last Name">
+            </div>
+          </div>
 
-    </div>
-    <div class="form-item-wrapper flexed-item">
-      <label for="lastName" class="label-ref label">Last Name</label>
-      <input id="lastName" type="text" class="input-text input" name="lastName" required placeholder="Last Name">
-    </div>
-    <div class="form-item-wrapper flexed-item">
-      <label for="userName" class="label-ref label">User Name</label>
-      <input id="userName" type="text" class="input-text input" name="userName" required placeholder="User Name">
-    </div>
-    <div class="form-item-wrapper flexed-item">
-      <label for="email" class="label-ref label">Email</label>
-      <input id="email" type="email" class="input-text input" name="email" required placeholder="email@email.com">
-    </div>
-    <div class="form-item-wrapper flexed-item">
-      <label for="password" class="label-ref label">Password</label>
-      <input id="password" type="password" class="input-text input" name="password" required placeholder="••••••">
-    </div>
-    <div class="form-item-wrapper flexed-item">
-    <label for="photo" class="label-ref label">Picture</label>
-    <input id="photo" type="file" class="input-text input" name="photo">
-    </div>
-    <div class="form-item-wrapper flexed-item">
-      <label for="telephone" class="label-ref label">Telephone Number</label>
-      <input id="telephone" type="text" class="input-text input" name="telephone" required placeholder="(555) 555-5555">
-    </div>
-    <div class="form-item-wrapper flexed-item">
-      <label for="streetAddress" class="label-ref label">Street Address</label>
-      <input id="streetAddress" type="text" class="input-text input" name="streetAddress" required placeholder="Calle Aguila 555">
-    </div>
-    <div class="form-item-wrapper flexed-item">
-      <label for="city" class="label-ref label">City</label>
-      <input id="city" type="text" class="input-text input" name="city" required placeholder="Guadalajara">
-    </div>
-    <div class="form-item-wrapper flexed-item">
-      <label for="zipCode" class="label-ref label">Zip Code</label>
-      <input id="zipCode" type="text" class="input-text input" name="zipCode" required placeholder="55555">
-    </div>
-    <div>
-      <p>Planning to sell your goods on Artetic? Please fill in the 3 fields below to receive payments.</p>
-    </div>
-    <div class="form-item-wrapper flexed-item">
-      <label for="description" class="label-ref label">About Me</label>
-      <textarea type="text" class="input-text input" id="description" name="description" placeholder="I am a 3rd generation shoemaker specializing in regional designs" style="height: 50px"></textarea>
-    </div>
-    <div class="form-item-wrapper flexed-item">
-      <label for="bankName" class="label-ref label">Bank Name</label>
-      <input id="bankName" type="text" class="input-text input" name="bankName" placeholder="Banamex">
-    </div>
-    <div class="form-item-wrapper flexed-item">
-      <label for="accountNumber" class="label-ref label">Bank Account Number</label>
-      <input id="accountNumber" type="text" class="input-text input" name="accountNumber" placeholder="123CFL928583">
-    </div>
+          <div class="field-wrap">
+           <label for="userName">User Name</label>
+                 <input id="userName" type="text" name="userName" required placeholder="User Name">
+          </div>
+          
+          <div class="field-wrap">
+      <label for="email">Email</label>
+      <input id="email" type="email" name="email" required placeholder="email@email.com">
+          </div>
+          
+          <div class="field-wrap">
+      <label for="password">Password</label>
+      <input id="password" type="password" name="password" required placeholder="••••••">
+          </div>
 
-    <button class="button-primary white">Create Account</button>
-  </form>
-  <p class="form-sub-infos">Already have an account ? <a href="/signin" class="button-link-form">Sign In</a></p>
+          <div class="field-wrap">
+    <label for="photo">Picture</label>
+    <input id="photo" type="file" name="photo">
+          </div>
+
+          <div class="field-wrap">
+      <label for="telephone">Telephone Number</label>
+      <input id="telephone" type="text" name="telephone" required placeholder="(555) 555-5555">
+          </div>        
+
+          <div class="field-wrap">
+      <label for="streetAddress">Street Address</label>
+      <input id="streetAddress" type="text" name="streetAddress" required placeholder="Calle Aguila 555">
+          </div>
+
+          <div class="field-wrap">
+      <label for="city">City</label>
+      <input id="city" type="text" name="city" required placeholder="Guadalajara">
+          </div>
+
+          <div class="field-wrap">
+      <label for="zipCode">Zip Code</label>
+      <input id="zipCode" type="text" name="zipCode" required placeholder="55555">
+          </div>
+
+    <h1>
+      <p>Planning to sell your goods on Artetic?
+      <br>
+      Please fill in the 3 fields below to receive payments.</p>
+    </h1>
+
+
+
+          <div class="field-wrap">
+      <label for="description">About Me</label>
+      <textarea type="text" id="description" name="description" placeholder="3rd generation shoemaker specializing in regional design"></textarea>
+          </div>
+
+          <div class="field-wrap">
+      <label for="bankName">Bank Name</label>
+      <input id="bankName" type="text" name="bankName" placeholder="Banamex">
+          </div>
+
+          <div class="field-wrap">
+      <label for="accountNumber" >Bank Account Number</label>
+      <input id="accountNumber" type="text" name="accountNumber" placeholder="123CFL928583">
+          </div>
+          
+          <button type="submit" class="button button-block"/>Create Account</button>
+          
+          </form>
+
+<hr>
+
+  <h1>Already have an account?  <a href="/login" class="button-link-form">Sign In</a></h1>
+
+        </div>
+
+        
+      </div><!-- tab-content -->
+      
+</div> <!-- /form -->
+
+
 </section>
-

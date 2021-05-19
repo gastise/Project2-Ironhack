@@ -1,23 +1,25 @@
-<h1>Login</h1>
-
-<section class="sign form-container">
-  <header class="form-header">
-    <h1 class="form-title">Welcome Back!</h1>
-    <p class="form-subtitle">New products are uploaded everyday! Login to check what is new! </p>
+<section>
+  <header>
+    <h1>Welcome Back!</h1>
+    <h1>New products are uploaded everyday! Login to check what is new!</h1>
   </header>
   {{#if msg}}
   <p class="message {{msg.status}}">{{msg.text}}</p>
   {{/if}}
-  <form method="post" action="/login" id="form_user">
-    <div class="form-item-wrapper flexed-item">
-      <label for="email" class="label-ref label">Email</label>
-      <input id="email" type="email" class="input-text input" placeholder="email@gmail.com" required name="email">
+  <form method="post" action="/login" class="form">
+    <div class="field-wrap">
+      <label for="email">Email</label>
+      <input id="email" type="email" placeholder="email@gmail.com" required name="email">
     </div>
-    <div class="form-item-wrapper flexed-item">
-      <label for="password" class="label-ref label">Password</label>
-      <input id="password" type="password"  class="input-text input" placeholder="••••••" required name="password">
+    <div class="field-wrap">
+      <label for="password">Password</label>
+      <input id="password" type="password" placeholder="••••••" required name="password">
     </div>
-    <button class="button-primary white">Log in</button>
+
+          <button type="submit" class="button button-block"/>Login</button>
   </form>
-  <p class="form-sub-infos">Don't have an account yet? <a href="/signup" class="button-link-form">Sign Up</a></p>
+
+<hr>
+
+  <h1>Don't have an account yet?  <a href="/signup" class="button-link-form">Sign Up</a></h1>
 </section>
