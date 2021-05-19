@@ -6,6 +6,11 @@ const OrderModel = require("../models/Order");
 const router = express.Router();
 
 //GET Add the productID to the Favourites of the user who is logged in
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 65e4c8a704adfe9e5234804548b4fd72d39ff59e
 
 
 
