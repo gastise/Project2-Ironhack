@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
-const InvoiceSchema = new Schema(
+const CartSchema = new Schema(
   {
     orderIds: [{ type: Schema.Types.ObjectId, ref: "order" }],
     paymentMethod: {
@@ -13,7 +13,7 @@ const InvoiceSchema = new Schema(
   { timestamps: true }
 );
 
-const InvoiceModel = mongoose.model("invoice", InvoiceSchema);
+const CartModel = mongoose.model("cart", CartSchema);
 
-module.exports = InvoiceModel;
+module.exports = CartModel;
 

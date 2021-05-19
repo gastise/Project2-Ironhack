@@ -31,6 +31,7 @@ const UserSchema = new Schema(
       default:
         "https://thumbs.dreamstime.com/b/default-avatar-profile-icon-social-media-user-vector-default-avatar-profile-icon-social-media-user-vector-portrait-176194876.jpg",
     },
+    favorites: [{ type: Schema.Types.ObjectId, ref: "product" }],
     phoneNumber: String, // only for purchase
     streetAddress: String, // only for purchase
     city: String,
@@ -39,11 +40,10 @@ const UserSchema = new Schema(
     bankName: String, // only for vendors
     bankAccountNumber: String, // only for vendors
     isAdmin: Boolean,
-},
+  },
   { timestamps: true }
 );
 
 const UserModel = mongoose.model("user", UserSchema);
 
 module.exports = UserModel;
-

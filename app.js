@@ -20,12 +20,12 @@ app.set("view engine", "hbs");
 const index = require('./routes/index');
 const dashboardRouter = require("./routes/dashboard");
 const userRouter = require("./routes/user");
-const invoiceRouter = require("./routes/invoice");
+const cartRouter = require("./routes/cart");
 
 app.use('/', index);
 app.use("/dashboard", dashboardRouter); // use product router
 app.use("/", userRouter); // use user router
-app.use("/", invoiceRouter); // use invoice router
+app.use("/cart", cartRouter); // use cart router
 
 
 
