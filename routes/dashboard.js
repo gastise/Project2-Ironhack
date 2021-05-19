@@ -5,8 +5,9 @@ const UserModel = require("../models/User");
 const uploader = require("../config/cloudinary");
 
 router.get("/", async (req, res, next) => {
-  const vendor = await UserModel.findOne({ _id: "60a38d60683e92586f20e0e4" })
-  const products = await ProductModel.find({ vendorId: "60a38d60683e92586f20e0e4"})
+  const myUser = req.session.currentUser;
+  const vendor = myUser
+  const products = await ProductModel.find({ vendorId: myUser._id})
   try {
     res.render("dashboard/dashboard", { vendor, products });
   } catch (err) {
@@ -55,9 +56,12 @@ router.get("/create", (req, res) => {
 // POST - create one product
 router.post("/create", uploader.single("photo"), async (req, res, next) => {
   const newProduct = { ...req.body };
+  const myUser = req.session.currentUser;
 
   if (!req.file) newProduct.photo = undefined;
   else newProduct.photo = req.file.path;
+
+  newProduct.vendorId = myUser._id
 
   try {
     await ProductModel.create(newProduct);
