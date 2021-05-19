@@ -5,6 +5,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon ./app.js -e .js,.hbs",
+    "start": "node ./bin/www",
     "seed:product": "node ./bin/seed/seed.product.js",
     "seed:all": "npm run seed:product && npm run seed:user",
     "seed:user": "node ./bin/seed/seed.user.js"
