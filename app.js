@@ -56,8 +56,4 @@ app.use("/cart", cartRouter); // use cart router
 
 
 
-app.listen(3000);
-
-
-
-module.exports = app;
+app.listen(process.env.PORT)
