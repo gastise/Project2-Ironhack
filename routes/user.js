@@ -6,9 +6,9 @@ const router = express.Router();
 // GET - the product details
 router.get("/product/:id", async (req, res, next) => {
     const product = await ProductModel.findById(req.params.id)
-    console.log(product);
+    const user = await UserModel.findById(product.vendorId)
     try {
-      res.render("products.hbs",product);
+      res.render("products.hbs", {product, user} );
     } catch (err) {
       next(err);
     }
