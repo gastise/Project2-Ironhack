@@ -1,11 +1,26 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans); */
 /* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap'); */
-
+* {
+  border: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+} 
 .nav1 {
-    display: flex;
-    flex-direction: row;
     background-color: #8BD7FF;
 }
+.nav2{
+  height: 50px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo{
+  width: 80x;
+  height: 80px;
+}
+
 .nav2 a,.nav1 a{
   text-decoration:none;
   color:black;
@@ -17,19 +32,23 @@
 .nav2 {
     background-color: #BFE8F2;
 }
+.nav2 a{
+  margin : 15px;
+}
 
 .nav-left {
     margin-left: 5px;
 }
 
-.nav-right1 {
-    margin-right: 5px;
+.buttoNav {
+    background-color: #F1ED63;
+    padding: 5px 15px;
+    border-radius: 48%;
 }
-
-.nav-right2 {
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 10px;
+.vendorProfile {
+  background-color: #F1ED63;
+  padding: 5px 15px;
+  border-radius: 48%;
 }
 
 
@@ -79,11 +98,6 @@ body{
   cursor: pointer;
   font-size: 20px;
 }
-.logo{
-  width: 60px;
-  height: 60px;
-}
 .infobox{
-  background: rgb(0,180,204);
-  background: linear-gradient(90deg, rgba(0,180,204,1) 7%, rgba(0,212,255,1) 100%);
+  background: linear-gradient(90deg, rgb(118, 215, 228) 7%, rgba(0,212,255,1) 100%);
 }
