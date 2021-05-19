@@ -1,0 +1,29 @@
+<div>
+        {{#each product}}
+        <p>{{this.name}}</p>
+        <p>{{this.description}}<p>
+        <p>${{this.price}}</p>
+        {{/each}}
+
+        {{#each order}}
+        <p>{{this.quantity}}</p>
+        {{/each}}
+
+        {{#each product}}
+        <img style="height: 40px;" src="{{this.photo}}">
+        <a href="product/{{this.id}}">View product details</a>
+        {{/each}}
+        
+    
+    </div>
+    
+    <div class="orderSummary">
+    <h2>Order Summary</h2>
+    {{#each invoice}}
+    <ul>
+        <li>{{this.order}}</li>
+    </ul>
+    {{/each}}
+    
+    </div>
+
