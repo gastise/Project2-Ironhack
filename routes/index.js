@@ -133,6 +133,16 @@ router.post("/login", async (req, res, next) => {
   }
 });
 
+// GET - LOG OUT
+
+router.get("/logout", async (req, res, next) => {
+  req.session.destroy(function (err) {
+    // cannot access session here anymore
+    // console.log(req.session.currentUser);
+    res.redirect("/");
+  });
+});
+ 
 // GET - SIGN UP
 
 router.get("/signup", (req, res) => {
