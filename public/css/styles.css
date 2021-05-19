@@ -1,103 +1,107 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans); */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+*/
 /* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap'); */
 * {
   border: none;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-} 
-.nav1 {
-    background-color: #8BD7FF;
 }
-.nav2{
+.nav1 {
+  background-color: #8bd7ff;
+}
+.nav2 {
   height: 50px;
   font-weight: bold;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.logo{
+.logo {
   width: 80x;
   height: 80px;
 }
 
-.nav2 a,.nav1 a{
-  text-decoration:none;
-  color:black;
+.nav2 a,
+.nav1 a {
+  text-decoration: none;
+  color: black;
 }
 .nav2 a {
-  text-decoration:none;
+  text-decoration: none;
 }
 
 .nav2 {
-    background-color: #BFE8F2;
+  background-color: #bfe8f2;
 }
-.nav2 a{
-  margin : 15px;
+.nav2 a {
+  margin: 15px;
 }
 
 .nav-left {
-    margin-left: 5px;
+  margin-left: 5px;
 }
 
 .buttoNav {
-    background-color: #F1ED63;
-    padding: 5px 15px;
-    border-radius: 48%;
-}
-.vendorProfile {
-  background-color: #F1ED63;
+  background-color: #f1ed63;
   padding: 5px 15px;
   border-radius: 48%;
 }
-
-
+.vendorProfile {
+  background-color: #f1ed63;
+  padding: 5px 15px;
+  border-radius: 48%;
+}
 .footer {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: flex-end;
-    background-color: #F1ED63;
-    margin-bottom: 0px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  background-color: #f1ed63;
+  margin-bottom: 0px;
 }
 
-body{
+body {
   background: #f2f2f2;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .search {
   width: 100%;
   position: relative;
   display: flex;
-  background-color: #8BD7FF;
+  background-color: #8bd7ff;
 }
 
 .searchTerm {
   width: 50%;
-  border: 3px solid #00B4CC;
+  border: 3px solid #f1ed63;
   border-right: none;
   padding: 5px;
   height: 20px;
   border-radius: 5px 0 0 5px;
   outline: none;
-  color: #9DBFAF;
+  color: #9dbfaf;
 }
 
-.searchTerm:focus{
-  color: #00B4CC;
+.searchTerm:focus {
+  color: #f1ed63;
 }
 
 .searchButton {
   width: 40px;
   height: 36px;
-  border: 1px solid #00B4CC;
-  background: #00B4CC;
+  border: 1px solid #f1ed63;
+  background: #f1ed63;
   text-align: center;
-  color: #fff;
+  color: black;
   border-radius: 0 5px 5px 0;
   cursor: pointer;
   font-size: 20px;
 }
-.infobox{
-  background: linear-gradient(90deg, rgb(118, 215, 228) 7%, rgba(0,212,255,1) 100%);
+.infobox {
+  background: linear-gradient(
+    90deg,
+    rgb(118, 215, 228) 7%,
+    rgba(0, 212, 255, 1) 100%
+  );
 }
