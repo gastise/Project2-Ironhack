@@ -1,12 +1,13 @@
 const express = require("express");
 const ProductModel = require("../models/Product");
 const UserModel = require("../models/User");
+const protectPrivateRoute = require("../middlewares/protectPrivateRoute");
 
 const router = express.Router();
 
 //GET - WHEN YOU CLICK ON FAVOURITES Take the product Id and Add  to the Favourites of the user who is logged in
 
-router.get("/", (req, res) => {
+router.get("/", protectPrivateRoute, (req, res) => {
   // const logInUser=req.session.currentUser;
   UserModel.findById(req.session.currentUser._id)
     .populate("favourites")

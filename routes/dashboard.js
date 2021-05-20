@@ -3,8 +3,9 @@ const router = new express.Router();
 const ProductModel = require("../models/Product");
 const UserModel = require("../models/User");
 const uploader = require("../config/cloudinary");
+const protectPrivateRoute = require("../middlewares/protectPrivateRoute");
 
-router.get("/", async (req, res, next) => {
+router.get("/", protectPrivateRoute, async (req, res, next) => {
   const myUser = req.session.currentUser;
   const vendor = myUser
   const products = await ProductModel.find({ vendorId: myUser._id})
@@ -16,7 +17,7 @@ router.get("/", async (req, res, next) => {
   });
 
 // GET - update one product
-router.get("/update/:id", async (req, res, next) => {
+router.get("/update/:id", protectPrivateRoute, async (req, res, next) => {
   const product = await ProductModel.findById(req.params.id)
   try {
     res.render("dashboard/productUpdate", product);
@@ -39,7 +40,7 @@ router.post("/update/:id", uploader.single("cover"), async (req, res, next) => {
 });
 
 // GET - delete one product
-router.get("/delete/:id", async (req, res, next) => {
+router.get("/delete/:id", protectPrivateRoute, async (req, res, next) => {
   try {
     await ProductModel.findByIdAndRemove(req.params.id);
     res.redirect("/dashboard");
@@ -49,7 +50,7 @@ router.get("/delete/:id", async (req, res, next) => {
 });
 
 // GET - create one product
-router.get("/create", (req, res) => {
+router.get("/create", protectPrivateRoute, (req, res) => {
   res.render("dashboard/productCreate");
 });
 

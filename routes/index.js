@@ -5,9 +5,6 @@ const UserModel = require("../models/User");
 const bcrypt = require("bcrypt");
 const uploader = require("../config/cloudinary");
 
-// require the Artetic user protect route under here: 
-// const protectPrivateRoute = require("../middlewares/protectPrivateRoute");
-
 // GET - HOME
 router.get("/", async (req, res, next) => {
   let regex = new RegExp(req.query.searchbar,"gi")
