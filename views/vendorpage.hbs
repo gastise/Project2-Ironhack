@@ -1,23 +1,29 @@
-<div>
-      <div class="infobox" style="border: 1px solid black">
-        <p>About me: {{vendor.firstName}} from {{vendor.city}}</p>
-        <img src={{vendor.photo}} alt={{vendor.userName}} height="250px" width="350px">
-{{!-- in this href we retrieve the previous product id --}}
-        <a href="/product/{{prodId}}">back to the item</a>
 
-        <p>{{vendor.description}}</p>
-        <p>Only {{vendor.itemsRemaining}} left in stock</p>
-      </div>
-    </div>
-     <div style="border: 1px solid black">
-         <p>Goods from {{vendor.userName}}</p>
+<div class="productPage">
 
+<div class="categoryCard">
+        <h3 class="categoryTitle">Artisan {{vendor.userName}}'s Page</h3>
+</div>
 
+<div class="productCard">
+    <img class="productPicture" src="{{vendor.photo}}" alt="{{vendor.userName}}'s picture">
+</div>
 
-      {{#each products}}
-      <div class="infobox" style="border: 1px solid black">
-        <p>{{this.name}}</p>
-        <img src="{{this.photo}}" style="height: 200px">
-      </div>
-      {{/each}}
+<div class="productCard"> 
+    <h1>{{vendor.userName}} from {{vendor.city}}</h1> 
+    <br>
+    <p> <strong style="color: #FA9657;" >About Me:</strong> {{vendor.description}}</p>
+    <br>
+</div>
+
+<div class="goodsFrom">
+    <h3> Goods from: <strong style="color: #FA9657;" >{{vendor.userName}} </strong> </h3>
+    <br>
+    <p>Click a photo to see the product!</p>
+    <br>
+    {{#each products}}
+    <a href="/product/{{this.id}}"><img class="vendorProductPicture" src="{{this.photo}}" alt="{{this.name}}"></a>
+    {{/each}}
+</div>
+
 </div>
