@@ -15,16 +15,15 @@
 <body>
     <nav class="fullnav">
         <div class="nav1">
-            <a class="nav-left" href="/"><img class="logo" src="/images/logoArtetic.png" alt="website logo"></a>
-            <div class="search">
-                <form action="/">
-                    <input id="searchbar" onkeyup="searchBar" type="text" name="searchbar" class="searchTerm" placeholder="What are you looking for?">
-                    <button type="submit" class="searchButton">
-                    <i class="fa fa-search"></i>
-                    </button>
-                </form>
-            </div>
-            <div class="nav-right">   
+                 <a class="nav-left" href="/"><img class="logo" src="/images/logoArtetic.png" alt="website logo"></a>
+                 <div class="search">
+                     <form action="/">
+                        <input id="searchbar" onkeyup="searchBar" type="text" name="searchbar" class="searchTerm" placeholder="What are you looking for?">
+                        <button type="submit" class="searchButton">
+                        <i class="fa fa-search"></i>
+                        </button>
+                    </form>
+                </div>
               {{#unless currentUser}}         
                 <a class="buttoNav login" href="/login">Log In</a>
                 <a class="buttoNav signup" href="/signup">Sign Up</a>

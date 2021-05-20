@@ -13,16 +13,19 @@ body {
 
 /*NAV BAR STYLING*/
 
-.fullnav{
+.fullnav {
   position: -webkit-sticky;
   position: sticky;
   top: -1px;
-  z-index:1000;
+  z-index: 1000;
 }
 .nav1 {
-  height:20vh;
+  height: 20vh;
   background-color: #8bd7ff;
   font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .nav2 {
   height: 10vh;
@@ -52,7 +55,7 @@ body {
   background-color: #f1ed63;
   padding: 5px 15px;
   border-radius: 35%;
-  float:left;
+  text-align:center;
 }
 
 .search {
@@ -105,19 +108,35 @@ body {
 }
 
 .b {
-  background: url('/images/woman_chiapas.jpg') center/cover;
+  background: url("/images/woman_chiapas.jpg") center/cover;
 }
-
-.introInsert{
+.titleMain{
+  font-weight: bold;
+  color: #fa9657;
+}
+.signup, .login {
+  background-color: #f1ed63;
+  padding: 5px 25px;
+  border-radius: 35%;
+  text-align:center;
+  width: 200px;
+  height: auto;
+  padding: left;
+  text-decoration: none;
+  color: black;
+}
+.introInsert {
+  position: relative;
+  bottom: 150px;
+  left: 350px;
   background-color: white;
   border-radius: 25%;
   color: black;
-  height: 36vh;
-  width:32vh;
-  font-size: 12px;
+  height: 240px;
+  width: 50vh;
+  padding: 50px 0;
   text-align: center;
-  margin-left: 300px;
-
+  font-size: 12px;
 }
 
 /*VENDOR DETAILS STYLING*/
@@ -129,107 +148,107 @@ body {
   );
 }
 /* PRODUCT DETAILS PAGE */
-.hidden{
+.hidden {
   display: none;
 }
 
 /* LOGIN SIGN UP */
 
 .form {
-  background:rgba(#13232f,.9);
+  background: rgba(#13232f, 0.9);
   padding: 40px;
-  max-width:600px;
-  margin:40px auto;
+  max-width: 600px;
+  margin: 40px auto;
   border-radius: 4px;
   box-shadow: 4px 10px 4px;
 }
 
 h1 {
-  text-align:center;
-  color: #FA9657;
+  text-align: center;
+  color: #fa9657;
   font-weight: 300;
-  margin:0 0 40px;
+  margin: 0 0 40px;
 }
 
 label {
-  position:absolute;
-  transform:translateY(6px);
+  position: absolute;
+  transform: translateY(6px);
   right: 0%;
-  color:rgba(white,.5);
-  transition:all 0.25s ease;
+  color: rgba(white, 0.5);
+  transition: all 0.25s ease;
   pointer-events: none;
-  font-size:22px;
-}
- 
-label.active {
-  transform:translateY(50px);
-  left:2px;
-  font-size:14px;
+  font-size: 22px;
 }
 
+label.active {
+  transform: translateY(50px);
+  left: 2px;
+  font-size: 14px;
+}
 
 label.highlight {
-  color:#FA9657;
+  color: #fa9657;
 }
 
-input, textarea {
-  font-size:22px;
-  display:block;
+input,
+textarea {
+  font-size: 22px;
+  display: block;
   width: 100%;
-  height:100%;
-  padding:5px 10px;
-  background:none;
-  background-image:none;
-  border:1px solid #a0b3b0;
-  color:#FA9657;
-  border-radius:0;
-  transition:border-color .25s ease, box-shadow .25s ease;
+  height: 100%;
+  padding: 5px 10px;
+  background: none;
+  background-image: none;
+  border: 1px solid #a0b3b0;
+  color: #fa9657;
+  border-radius: 0;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
 }
 
-input:focus, textarea:focus {
-    outline:0;
-    border-color:#FA9657;
-  }
-
+input:focus,
+textarea:focus {
+  outline: 0;
+  border-color: #fa9657;
+}
 
 textarea {
-  border:2px solid #a0b3b0;
+  border: 2px solid #a0b3b0;
   resize: vertical;
 }
 
 .field-wrap {
-  position:relative;
-  margin-bottom:40px;
+  position: relative;
+  margin-bottom: 40px;
 }
 
 .top-row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+  content: "";
+  display: table;
+  clear: both;
+}
 
 .button {
-  border:0;
-  outline:none;
-  border-radius:0;
-  padding:15px 0;
-  font-size:2rem;
+  border: 0;
+  outline: none;
+  border-radius: 0;
+  padding: 15px 0;
+  font-size: 2rem;
   font-weight: 600;
-  text-transform:uppercase;
-  letter-spacing: .1em;
-  background: #F1ED63;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  background: #f1ed63;
   color: white;
 }
 
-  .button:hover {
-    cursor: pointer;
-  }
+.button:hover {
+  cursor: pointer;
+}
 
 .button-block {
-  display:block;
-  width:50%;
+  display: block;
+  width: 50%;
 }
-  
+
 /*FOOTER STYLING*/
 
 .footer {
@@ -241,7 +260,7 @@ textarea {
   margin-bottom: 0px;
 }
 
-.footer a{
+.footer a {
   margin: 10px;
   text-decoration: none;
   color: black;
