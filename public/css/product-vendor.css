@@ -28,8 +28,9 @@
 }
 
 .productPicture {
-  width: 100%;
-  height: auto;
+    width: 350px;
+    height: 400px;
+  object-fit: cover;  
   border-radius: 30px;
 }
 
@@ -63,8 +64,9 @@
 }
 
 .userPicture {
-  width: 100%;
-  height: auto;
+    width: 150px;
+    height: 200px;
+  object-fit: cover;  
   border-radius: 30px;
 }
 
