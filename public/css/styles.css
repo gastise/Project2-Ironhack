@@ -117,14 +117,6 @@ body {
   text-align: center;
 }
 
-/*VENDOR DETAILS STYLING*/
-.infobox {
-  background: linear-gradient(
-    90deg,
-    rgb(118, 215, 228) 7%,
-    rgba(0, 212, 255, 1) 100%
-  );
-}
 
 /* LOGIN SIGN UP */
 
@@ -212,12 +204,10 @@ textarea {
   letter-spacing: .1em;
   background: #F1ED63;
   color: white;
-  transition: all .5s ease;
 }
 
-  .button:hover, .button:focus {
+  .button:hover {
     cursor: pointer;
-    background: darken(#1ab188,5%);
   }
 
 .button-block {

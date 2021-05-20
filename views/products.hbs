@@ -1,15 +1,30 @@
-<div>
+<div class="productPage">
+
+<div class="categoryCard">
+        <h3 class="categoryTitle">{{product.category}}</h3>
+</div>
+
+<div class="productCard">
+    <img class="productPicture" src="{{product.photo}}" alt="{{this.name}}'s picture">
+</div>
+
+<div class="productCard">
     <h1>{{product.name}}</h1>
-        <h3>100% Mexican Made</h3>
-        <p>{{product.description}}<p>
-        <p>Price: us$ {{product.price}}</p>
-        <p>Stock: {{product.itemsRemaining}}</p>
-        <p>Category: {{product.category}}</p>
-        <p>Artisan: {{user.userName}}</p>
-        <a href="/vendor/{{product.vendorId}}?productid={{product._id}}">More about this artisan</a>
-        <br>
-        <button><a href="/">Add to Favourites</a></button>
-        <hr>
-        <img class="picture" height="300px" width="300px" src="{{product.photo}}" alt="{{this.name}}'s picture">
+    <p>{{product.description}}<p>
+    <br>
+    <p> <strong style="color: #FA9657;" >Price:</strong> us$ {{product.price}}</p>
+    <br>
+    <p> <strong style="color: #FA9657;" >Stock:</strong> {{product.itemsRemaining}}</p>
+    <br>
+    <button class="productButton" ><a href="/favourites">Add to Favourites</a></button>
+    <hr>
+</div>
+
+<div class="productCard">
+    <img class="userPicture" src="{{user.photo}}" alt="{{user.userName}}'s picture">
+    <p> <strong style="color: #FA9657;" >Artisan:</strong> {{user.userName}}</p>
+    <p><a style="color: #8BD7FF;" href="/vendor/{{product.vendorId}}?productid={{product._id}}"><strong> More about this artisan</strong></a></p>
+</div>
+
 </div>
 

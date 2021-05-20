@@ -1,0 +1,68 @@
+/*VENDOR DETAILS STYLING*/
+.infobox {
+  background: linear-gradient(
+    90deg,
+    rgb(118, 215, 228) 7%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+/* PRODUCT */
+
+.productPage {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 0px;
+  margin-bottom: 150px;
+}
+
+.categoryCard {
+  background-color: #8bd7ff;
+  height: 50px;
+  margin-top: 0px;
+}
+
+.categoryTitle {
+  margin: 0px;
+}
+
+.productPicture {
+  width: 100%;
+  height: auto;
+  border-radius: 30px;
+}
+
+.productCard {
+  height: 400px;
+  width: 350px;
+  margin-top: 20px;
+}
+
+.productButton {
+  border: 0;
+  outline: none;
+  border-radius: 30px;
+  padding: 15px 0;
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  background: #f1ed63;
+  color: #fa9657;
+  height: 95px;
+}
+
+.productButton:hover {
+  cursor: pointer;
+}
+
+.productButton-block {
+  display: block;
+  width: 50%;
+}
+
+.userPicture {
+  width: 100%;
+  height: auto;
+  border-radius: 30px;
+}
