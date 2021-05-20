@@ -29,7 +29,7 @@ router.post("/", (req, res, next) => {
       },
     },
     { new: true }
-  ).then(res.redirect("/"));
+  ).then(res.redirect("/product/"+req.body._id));
   // console.log(req.session.currentUser.favourites);
 });
 
