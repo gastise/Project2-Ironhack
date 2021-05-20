@@ -7,11 +7,6 @@ const uploader = require("../config/cloudinary");
 
 // require the Artetic user protect route under here: 
 // const protectPrivateRoute = require("../middlewares/protectPrivateRoute");
-// const protectPrivateRoute = require("../middlewares/protectPrivateRoute.js");
-
-
-// const Category = require("../models/Category");
-// const User = require("../models/User");
 
 // GET - HOME
 router.get("/", async (req, res, next) => {
@@ -127,7 +122,7 @@ router.post("/login", async (req, res, next) => {
       delete userObject.password;
       req.session.currentUser = userObject;
 
-      req.flash("Success", "Wouhou Success!");
+      req.flash("success", "Wouhou Success!");
       res.redirect("/");
     }
   }

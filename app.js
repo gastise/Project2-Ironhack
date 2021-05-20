@@ -17,7 +17,7 @@ app.set("view engine", "hbs");
 app.use(express.urlencoded({ extended: false }));
 
 // app.set("views", __dirname + "/views");
-// hbs.registerPartial(__dirname + "/partial");
+hbs.registerPartials(__dirname + "/views/partial");
 
 // INITIALIZE SESSION
 app.use(
