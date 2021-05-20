@@ -216,12 +216,10 @@ textarea {
   letter-spacing: .1em;
   background: #F1ED63;
   color: white;
-  transition: all .5s ease;
 }
 
-  .button:hover, .button:focus {
+  .button:hover {
     cursor: pointer;
-    background: darken(#1ab188,5%);
   }
 
 .button-block {
