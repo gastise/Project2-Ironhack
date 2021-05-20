@@ -107,12 +107,12 @@ router.post("/login", async (req, res, next) => {
   const foundUser = await UserModel.findOne({ email: email });
 
   if (!foundUser) {
-    req.flash("error", "Invalid Credentials");
+    req.flash("error", "Invalid Credentials. Please try again.");
     res.redirect("/login");
   } else {
     const isSamePassword = bcrypt.compareSync(password, foundUser.password);
     if (!isSamePassword) {
-      req.flash("error", "Invalid Credentials");
+      req.flash("error", "Invalid Credentials. Please try again.");
       res.redirect("/login");
     } else {
       const userObject = foundUser.toObject();
@@ -152,7 +152,7 @@ router.post("/signup", uploader.single("photo"), async (req, res, next) => {
   try {
     const foundUser = await UserModel.findOne({ email: newUser.email });
     if (foundUser) {
-      req.flash("warning", "email already registered");
+      req.flash("warning", "Email already registered. Please log in.");
       res.redirect("/signup");
     } else {
       const hashedPassword = bcrypt.hashSync(newUser.password, 10);
