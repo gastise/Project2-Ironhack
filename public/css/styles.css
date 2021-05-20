@@ -269,3 +269,7 @@ textarea {
   font-weight: bold;
   margin-right: 40px;
 }
+
+#category {
+  font-size: 20px;
+}
