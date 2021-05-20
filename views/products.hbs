@@ -8,31 +8,21 @@
     <img class="productPicture" src="{{product.photo}}" alt="{{this.name}}'s picture">
 </div>
 
-<div class="productCard">
-    <h1>{{product.name}}</h1>
-        <h3>100% Mexican Made</h3>
-        <p>{{product.description}}<p>
-        <p>Price: us$ {{product.price}}</p>
-        <p>Stock: {{product.itemsRemaining}}</p>
-        <p>Category: {{product.category}}</p>
-        <p>Artisan: {{user.userName}}</p>
-        <a href="/vendor/{{product.vendorId}}?productid={{product._id}}">More about this artisan</a>
-        <br>
-
-        <form method="POST" action="/favourites">
-        <label for="_id"></label>
-        <input class="hidden" id="_id" name="_id" type="text" value="{{product._id}}">
-        <button >Add to Favourites</button>
-        </form>
-        <hr>
-        <img class="picture" height="300px" width="300px" src="{{product.photo}}" alt="{{this.name}}'s picture">
+<div class="productCard"> 
+    <h1>{{product.name}}</h1> 
     <p>{{product.description}}<p>
     <br>
     <p> <strong style="color: #FA9657;" >Price:</strong> us$ {{product.price}}</p>
     <br>
     <p> <strong style="color: #FA9657;" >Stock:</strong> {{product.itemsRemaining}}</p>
     <br>
-    <button class="productButton" ><a href="/favourites">Add to Favourites</a></button>
+
+    <form method="POST" action="/favourites">
+        <label for="_id"></label>
+        <input class="hidden" id="_id" name="_id" type="text" value="{{product._id}}">
+        <button class="productButton">Add to Favourites</button>
+        </form>
+
     <hr>
 </div>
 
