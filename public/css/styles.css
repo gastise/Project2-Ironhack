@@ -17,6 +17,7 @@ body {
   position: -webkit-sticky;
   position: sticky;
   top: -1px;
+  z-index:1000;
 }
 .nav1 {
   height:20vh;
@@ -115,6 +116,8 @@ body {
   width:32vh;
   font-size: 12px;
   text-align: center;
+  margin-left: 300px;
+
 }
 
 /*VENDOR DETAILS STYLING*/
