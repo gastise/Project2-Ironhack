@@ -157,7 +157,7 @@ body {
 .form {
   background: rgba(#13232f, 0.9);
   padding: 40px;
-  max-width: 600px;
+  max-width: 800px;
   margin: 40px auto;
   border-radius: 4px;
   box-shadow: 4px 10px 4px;
@@ -238,6 +238,8 @@ textarea {
   letter-spacing: 0.1em;
   background: #f1ed63;
   color: white;
+  display: flex;
+  margin-left: 180px;
 }
 
 .button:hover {
