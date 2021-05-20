@@ -158,7 +158,7 @@ router.post("/signup", uploader.single("photo"), async (req, res, next) => {
       const hashedPassword = bcrypt.hashSync(newUser.password, 10);
       newUser.password = hashedPassword;
       await UserModel.create(newUser);
-      req.flash("success", "congrats! You are registered");
+      req.flash("success", "Congrats! You are registered.");
       res.redirect("/login");
     }
   } catch (err) {
