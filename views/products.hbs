@@ -17,11 +17,15 @@
     <p> <strong style="color: #FA9657;" >Stock:</strong> {{product.itemsRemaining}}</p>
     <br>
 
+    {{#unless currentUser}}  
+
+    {{else}}
     <form method="POST" action="/favourites">
         <label for="_id"></label>
         <input class="hidden" id="_id" name="_id" type="text" value="{{product._id}}">
         <button class="productButton">Add to Favourites</button>
         </form>
+     {{/unless}}
 
     <hr>
 </div>
