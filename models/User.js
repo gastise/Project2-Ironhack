@@ -31,7 +31,7 @@ const UserSchema = new Schema(
       default:
         "https://thumbs.dreamstime.com/b/default-avatar-profile-icon-social-media-user-vector-default-avatar-profile-icon-social-media-user-vector-portrait-176194876.jpg",
     },
-    favorites: [{ type: Schema.Types.ObjectId, ref: "product" }],
+    favourites: [{ type: Schema.Types.ObjectId, ref: "product" }],
     phoneNumber: String, // only for purchase
     streetAddress: String, // only for purchase
     city: String,

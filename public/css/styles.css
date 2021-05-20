@@ -125,6 +125,10 @@ body {
     rgba(0, 212, 255, 1) 100%
   );
 }
+/* PRODUCT DETAILS PAGE */
+.hidden{
+  display: none;
+}
 
 /* LOGIN SIGN UP */
 

@@ -8,7 +8,7 @@ const hbs = require("hbs");
 const app = express();
 const flash = require("connect-flash"); 
 const session = require("express-session");
-
+const MongoStore = require("connect-mongo")
 
 
 // initial config
@@ -25,6 +25,7 @@ app.use(
     secret: process.env.SESSION_SECRET,
     saveUninitialized: true,
     resave: true,
+    store: MongoStore.create({mongoUrl: process.env.MONGO_URI})
   })
 );
 
@@ -47,12 +48,12 @@ app.use(require("./middlewares/exposeLoginStatus"));
 const index = require('./routes/index');
 const dashboardRouter = require("./routes/dashboard");
 const userRouter = require("./routes/user");
-const cartRouter = require("./routes/cart");
+const favouritesRouter = require("./routes/favourites");
 
 app.use('/', index);
 app.use("/dashboard", dashboardRouter); // use product router
 app.use("/", userRouter); // use user router
-app.use("/cart", cartRouter); // use cart router
+app.use("/favourites", favouritesRouter); // use favourite router
 
 
 
