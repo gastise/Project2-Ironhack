@@ -42,7 +42,7 @@ const users = [
       userName: "JuanaP",
       email: "juanita@gmail.com",
       password: "m123",
-      photo: "/images/artisan_profile_1",
+      photo: "/images/artisan_profile_1.jpg",
       phoneNumber: "123456789", // only for purchase""
       streetAddress: "12", // only for purchase
       city: "Chetumal",
@@ -58,7 +58,7 @@ const users = [
     userName: "LucyR",
     email: "lucyrod@gmail.com",
     password: "l123",
-    photo: "/images/lucia",
+    photo: "/images/lucia.jpg",
     phoneNumber: "56784563", // only for purchase""
     streetAddress: "calle Lopez #87", // only for purchase
     city: "Uruapan",
@@ -74,7 +74,7 @@ const users = [
   userName: "CharlieM",
   email: "charliem@gmail.com",
   password: "c123",
-  photo: "/images/carlos",
+  photo: "/images/carlos.jpg",
   phoneNumber: "09873567", // only for purchase""
   streetAddress: "calle Juarez #7", // only for purchase
   city: "Tepic",
