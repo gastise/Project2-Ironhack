@@ -5,14 +5,10 @@
         <div id="signup"> 
 <h1>Add a product</h1>
 
-<form class="form" method="post" action="/dashboard/create" enctype="multipart/form-data">
-
-<div class="top-row">
-            
-        <div class="field-wrap">
-    <label for="name">Product Name:</label>
-    <input type="text" id="name" name="name" placeholder="Your product's name">
-        </div>
+<form method="post" action="/dashboard/create" enctype="multipart/form-data">
+    
+    <label for="name" class="label">Product Name: </label>
+    <input class="input" type="text" id="name" name="name" placeholder="Your product's name">
 
         <div class="field-wrap">
     <h3 style="color: #fa9657;" for="category">Category: </h3>
@@ -27,8 +23,7 @@
 
         <div class="field-wrap">
     <label for="description" class="label">Description: </label>
-    <textarea type="text" class="input" id="description" name="description" placeholder="Please describe your product here."></textarea>
-        </div>
+    <textarea type="text" class="input" id="description" name="description" style="height: 100px" placeholder="Please describe your product here."></textarea>
 
         <div class="field-wrap">
     <label for="photo" class="label">
