@@ -173,7 +173,7 @@ h1 {
 label {
   position: absolute;
   transform: translateY(6px);
-  right: 0%;
+  right: 1%;
   color: rgba(white, 0.5);
   transition: all 0.25s ease;
   pointer-events: none;
@@ -250,6 +250,44 @@ textarea {
   display: block;
   width: 50%;
 }
+
+/* ABOUT US */
+
+.aUsContainer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.aUsText {
+height: 450px;
+width: 50%;
+margin-top: 80px;
+}
+
+.aUsText2 {
+  height: 450px;
+  width: 50%;
+  margin-top: 20px;
+  }
+
+
+.aUsPic1 {
+  width: 350px;
+  height: 450px;
+  border-radius: 20px;
+  object-fit: cover;
+  margin-left: 10px;
+}
+
+.aUsPic2 {
+  width: 350px;
+  height: 450px;
+  border-radius: 20px;
+  object-fit: cover;
+  margin-left: 10px;
+}
+
+
 
 /*FOOTER STYLING*/
 
