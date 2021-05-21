@@ -79,17 +79,13 @@ body {
 .searchTerm {
   width: 39%;
   border: 3px solid #f1ed63;
-  /* border-right: none; */
   padding: 15px;
   height: 20px;
   border-radius: 5px 0 0 5px;
   font-family: "Open Sans", sans-serif;
   font-style: oblique;
-  /* outline: none; */
   color: #9dbfaf;
   font-size: 18px;
-  position: relative;
-  top: 12px;
   background-color: #f1ec635d;
 }
 
@@ -97,19 +93,18 @@ body {
   color: black;
 }
 
+.flex-test {
+  display: flex;
+}
+
 .searchButton {
   width: 40px;
-  height: 30px;
+  height: 36px;
   border: 1px solid #f1ed63;
   background: #f1ed63;
-  /* text-align: center; */
   color: black;
-  /* border-radius: 0 5px 5px 0; */
   cursor: pointer;
   font-size: 20px;
-  position: relative;
-  bottom: 21px;
-  left: 290px;
 }
 
 .buttoNav {
