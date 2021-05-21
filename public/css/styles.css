@@ -1,6 +1,6 @@
 /*FULL DOCUMENT STYLING*/
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
-@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap);
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&family=Roboto:wght@300&display=swap');
 * {
   border: none;
   box-sizing: border-box;
@@ -24,11 +24,11 @@ body {
 .logo {
   width: 80x;
   height: 80px;
-  margin-left:15px;
+  margin-left: 15px;
 }
 
 .leftside {
-  margin-left:15px;
+  margin-left: 15px;
 }
 
 .nav-left {
@@ -52,8 +52,9 @@ body {
 
 .nav2 {
   height: 10vh;
+  font-size:24px;
   font-weight: bolder;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Pattaya', sans-serif;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -76,16 +77,18 @@ body {
   padding: 15px;
   height: 20px;
   border-radius: 5px 0 0 5px;
+  font-family: "Open Sans", sans-serif;
+  font-style: oblique;
   /* outline: none; */
   color: #9dbfaf;
-  /* font-size: 18px; */
+  font-size: 18px;
   position: relative;
-  top:12px;
+  top: 12px;
   background-color: #f1ec635d;
 }
 
 .searchTerm:focus {
-  color: #f1ed63;
+  color: black;
 }
 
 .searchButton {
@@ -99,9 +102,9 @@ body {
   cursor: pointer;
   font-size: 20px;
   position: relative;
-  bottom:24px;
+  bottom: 24px;
   left: 290px;
-} 
+}
 
 .buttoNav {
   background-color: #f1ed63;
@@ -110,11 +113,10 @@ body {
   text-align: center;
   margin-right: 25px;
   width: 200px;
-  font-size:14px;
+  font-size: 14px;
 }
 
 /* IF LOGGED IN YOU SEE THIS IN NAVBAR */
-
 
 /*MAIN PAGE STYLING*/
 
@@ -131,16 +133,18 @@ body {
 }
 .titleMain {
   font-weight: bold;
-  font-size: 25px;
+  font-size: 22px;
   color: black;
+  font-family: "Open Sans",sans-serif;
 }
-.arte {
-  font-weight: bolder;
-  font-size: 28px;
-}
+
 .signup {
-  background: rgb(241,241,74);
-  background: linear-gradient(351deg, rgba(241, 241, 74, 0.7) 17%, rgba(251,255,51,1) 49%);
+  background: rgb(241, 241, 74);
+  background: linear-gradient(
+    351deg,
+    rgba(241, 241, 74, 0.7) 17%,
+    rgba(251, 255, 51, 1) 49%
+  );
   padding: 5px 25px;
   border-radius: 35%;
   text-align: center;
@@ -149,8 +153,9 @@ body {
   padding: left;
   text-decoration: none;
   color: black;
-  font-size:14px;
+  font-size: 20px;
   font-weight: bold;
+  font-family: "Pattaya", sans-serif;
 }
 .introInsert {
   position: relative;
@@ -167,7 +172,7 @@ body {
 background: linear-gradient(317deg, rgba(251, 244, 236, 0.3) 7%, rgba(255, 211, 161, 0.5) 47%, rgba(251,240,236,0.3) 100%);   */
   border-radius: 25%;
   color: black;
-  height: 270px;
+  height: 290px;
   width: 50vh;
   padding: 50px 0;
   text-align: center;
@@ -176,6 +181,75 @@ background: linear-gradient(317deg, rgba(251, 244, 236, 0.3) 7%, rgba(255, 211, 
 
 /*HOME PAGE PRODUCTS GALLERY*/
 
+.container ul{
+  text-decoration: none;
+  list-style: none;
+  text-align: center;
+  margin:auto;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  max-width: 1200px;
+  margin:auto;
+  margin-bottom: 3rem;
+  margin-top: 20px;
+
+  height: 400px;
+  width: 300px;
+  padding: 20px;
+
+  border-radius: 30px;
+  background: rgb(170,74,241);
+  background: linear-gradient(351deg, rgba(170,74,241,1) 17%, rgba(225,197,245,0.8169642857142857) 73%);
+}
+
+.container li{
+  padding-bottom:5px;
+  font-weight: bold;
+  color:black;
+}
+
+.productPicture2 {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 30px;
+  margin-left: 10px;
+}
+.seeDetails {
+  position:relative;
+  top: 15px;
+  border: 0;
+  outline: none;
+  border-radius: 30px;
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  background: #f1ed63;
+  color: #fa9657;
+  height: 50px;
+  text-decoration: none;
+}
+
+.seeDetails2 {
+  border: 0;
+  outline: none;
+  border-radius: 30px;
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  background: #f1ed63;
+  color: #fa9657;
+  height: 50px;
+  text-decoration: none;
+  position:relative;
+  bottom:18px;
+}
 
 /*VENDOR DETAILS STYLING*/
 .infobox {
@@ -297,17 +371,16 @@ textarea {
 }
 
 .aUsText {
-height: 450px;
-width: 50%;
-margin-top: 80px;
+  height: 450px;
+  width: 50%;
+  margin-top: 80px;
 }
 
 .aUsText2 {
   height: 450px;
   width: 50%;
   margin-top: 20px;
-  }
-
+}
 
 .aUsPic1 {
   width: 350px;
@@ -324,8 +397,6 @@ margin-top: 80px;
   object-fit: cover;
   margin-left: 10px;
 }
-
-
 
 /*FOOTER STYLING*/
 

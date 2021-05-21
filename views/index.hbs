@@ -2,25 +2,32 @@
 <div class="fullscreen b">
   <div class="introInsert">
     <h2 class="titleMain">Welcome to <span class="arte">ARTéTIC</span></h2>
-    <br>
+    <br />
     <h2>When ethics meets online shopping.</h2>
-    <br>
+    <br />
     <h2>By connecting Mexican artisans with responsible consumers.</h2>
-    <br>
-    <br>
+    <br />
+    <br />
     <span><a class="signup" href="/signup">Sign up!</a></span>
   </div>
 
 </div>
 <div>
   {{#each products}}
-    <div style="border: 1px solid black">
-      <p>{{this.name}}</p>
-      <p>{{this.category}}</p>
-      <img style="height: 200px;" src="{{this.photo}}" />
-      <p>${{this.price}}</p>
-      <p>{{this.itemsRemaining}} left in stock</p>
-      <a href="product/{{this.id}}">View product details</a>
+    <div class="container">
+      <ul>
+        <li>{{this.name}}</li>
+        <li>{{this.category}}</li>
+        <li><img
+            class="productPicture2"
+            src="{{this.photo}}"
+          /></li>
+        <li>${{this.price}}</li>
+        <li>{{this.itemsRemaining}} left in stock</li>
+        <li><a class="seeDetails" href="product/{{this.id}}">View product
+            details</a></li>
+      </ul>
+      <br />
     </div>
   {{/each}}
 </div>
