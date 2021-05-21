@@ -59,6 +59,7 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: #f0cc96;
+  transition: 0s  #f0cc96;
 }
 
 .nav2 a {
@@ -67,6 +68,7 @@ body {
 
 .nav2 a:hover {
   color: #fa9657;
+  transition: all .3s ease;
 }
 
 .search {
@@ -119,6 +121,12 @@ body {
   width: 200px;
   font-size: 14px;
 }
+.nav1 a:hover{
+  color: #fa9657;
+  font-weight: bold;
+  transition: all .2s ease;
+}
+
 
 /* IF LOGGED IN YOU SEE THIS IN NAVBAR */
 
