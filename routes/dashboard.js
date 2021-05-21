@@ -66,7 +66,7 @@ router.post("/create", uploader.single("photo"), async (req, res, next) => {
 
   try {
     await ProductModel.create(newProduct);
-    res.redirect("/");
+    res.redirect("/dashboard");
   } catch (err) {
     next(err);
   }
