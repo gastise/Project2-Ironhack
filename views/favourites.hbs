@@ -1,6 +1,19 @@
-Here are your favourites:
-{{#each favourites}}
-      <div class="infobox" style="border: 1px solid black">
-        <p><img class="productPicture2" src="{{this.photo}}" alt=""></p>
-      </div>
-      {{/each}}
+{{#unless favourites}}
+
+  <h1>You have no favourites yet!</h1>
+  <h1><img class="small" src="/images/Party_Newyears_Confetti_Patern-512.png" alt="" /></h1>
+{{else}}
+
+  <h1>Your favourite artisan goods:</h1>
+  {{#each favourites}}
+    <div class="container">
+      <ul>
+        <li><img class="productPicture2" src="{{this.photo}}" alt="" /></li>
+        <li>{{this.name}}</li>
+        <li>{{this.itemsRemaining}} left in stock</li>
+        <li><a class="seeDetails" href="product/{{this.id}}">View product
+            details</a></li>
+      </ul>
+    </div>
+  {{/each}}
+{{/unless}}

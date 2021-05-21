@@ -264,6 +264,18 @@ background: linear-gradient(317deg, rgba(251, 244, 236, 0.3) 7%, rgba(255, 211, 
   display: none;
 }
 
+
+/*FAVOURITES PAGE ADDITIONAL STYLING*/
+
+.container li{
+  list-style: none;
+}
+.small{
+width:100px;
+height:auto;
+margin:auto;
+}
+
 /* LOGIN SIGN UP */
 
 .form {
