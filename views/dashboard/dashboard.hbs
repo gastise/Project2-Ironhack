@@ -1,21 +1,30 @@
-<h1>Vendor dashboard</h1>
+<h1 class="dashboard-title">Vendor dashboard</h1>
 
-<p>Welcome, {{vendor.userName}}!</p>
-<img src="{{vendor.photo}}" style="height: 200px;">
-<h2>Manage your products</h2>
-<div>
-{{#each products}}
-  <div style="border: 1px solid black">
-    <p>{{this.name}}</p>
-    <p>{{this.category}}</p>
-    <img style="height: 200px;" src="{{this.photo}}">
-    <p>{{this.description}}</p>
-    <p>${{this.price}}</p>
-    <p>Only {{this.itemsRemaining}} left in stock</p>
-    <a href="dashboard/update/{{this.id}}">Update this product</a>
-    <a href="dashboard/delete/{{this.id}}">Delete this product</a>
+<div class="dashboard-container">
+  <div>
+    <h2>Welcome, {{vendor.userName}}!</h2>
+    <img class="userPicture" src="{{vendor.photo}}">
   </div>
-{{/each}}
+  <div class="add-button">
+    <a class="seeDetails2" id="lg-btn" href="/dashboard/create">Add a new product</a>
+  </div>
+  <div>
+    <h2>Manage your products</h2>
+  </div>
+  <div>
+  {{#each products}}
+    <div class="dashboard-products">
+      <h3 class="dash-prod-title">{{this.name}}</h3>
+      <p>{{this.category}}</p>
+      <img class="productPicture2" id="prod-img" style="height: 200px;" src="{{this.photo}}">
+      <p>{{this.description}}</p>
+      <p><b>${{this.price}}</b></p>
+      <p><b>Only {{this.itemsRemaining}} left in stock</b></p>
+      <div class="dashboard-buttons">
+        <a class="seeDetails2" id="update-btn" href="dashboard/update/{{this.id}}">Update this product</a>
+        <a class="seeDetails2" id="delete-btn" href="dashboard/delete/{{this.id}}">Delete this product</a>
+      </div>
+    </div>
+  {{/each}}
+  </div>
 </div>
-<h2>Add a new product</h2>
-<p>Click <a href="/dashboard/create">here</a> to offer a new product for sale!</p>

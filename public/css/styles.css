@@ -65,13 +65,17 @@ body {
   margin: 15px;
 }
 
+.nav2 a:hover {
+  color: #fa9657;
+}
+
 .search {
   width: 100%;
   position: relative;
 }
 
 .searchTerm {
-  width: 50%;
+  width: 39%;
   border: 3px solid #f1ed63;
   /* border-right: none; */
   padding: 15px;
@@ -93,7 +97,7 @@ body {
 
 .searchButton {
   width: 40px;
-  height: 36px;
+  height: 30px;
   border: 1px solid #f1ed63;
   background: #f1ed63;
   /* text-align: center; */
@@ -102,7 +106,7 @@ body {
   cursor: pointer;
   font-size: 20px;
   position: relative;
-  bottom: 24px;
+  bottom: 21px;
   left: 290px;
 }
 
@@ -404,6 +408,14 @@ textarea {
 
 .aUsPic2 {
   width: 350px;
+  height: 450px;
+  border-radius: 20px;
+  object-fit: cover;
+  margin-left: 10px;
+}
+
+.aUsPic3 {
+  width: 450px;
   height: 450px;
   border-radius: 20px;
   object-fit: cover;
