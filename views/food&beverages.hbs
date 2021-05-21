@@ -2,12 +2,12 @@
     <h1>Food & Beverages - {{products.length}} items</h1>
 
     <div>
-        {{#each products}}
-        <div style="background: url('{{this.photo}}');">
-            <a href="/product/{{this._id}}">
+{{#each products}}
+        <div> 
+            <img class="productPicture2" src="{{this.photo}}" alt="{{this.product}}">
+            <a class="seeDetails2" href="/product/{{this._id}}">
                 {{this.name}}
-            </a>
+            </a> 
         </div>
-    </div>
-    {{/each}}
+        {{/each}}
 </div>

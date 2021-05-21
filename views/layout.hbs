@@ -16,8 +16,9 @@
 <body>
     <nav class="fullnav">
         <div class="nav1">
-                 <a class="nav-left" href="/"><img class="logo" src="/images/logoArtetic.png" alt="website logo"></a>
-                 <div class="search">
+                 <a class="leftside nav-left" href="/"><img class="logo" src="/images/logoArtetic.png" alt="website logo"></a>
+                 
+                 <div class="wrap leftside search">
                      <form action="/">
                         <input id="searchbar" onkeyup="searchBar" type="text" name="searchbar" class="searchTerm" placeholder="What are you looking for?">
                         <button type="submit" class="searchButton">
@@ -27,11 +28,11 @@
                 </div>
               {{#unless currentUser}}         
                 <a class="buttoNav login" href="/login">Log In</a>
-                <a class="buttoNav signup" href="/signup">Sign Up</a>
+                <a class="buttoNav" href="/signup">Sign Up</a>
               {{else}}
-                <a class="vendorProfile" href="/dashboard">My vendor profile</a>
-                <a class="vendorProfile" href="/favourites">My favourites</a>
-                <a class="vendorProfile" href="/logout">Sign out</a>
+                <a class="buttoNav vendorProfile" href="/dashboard">Vendor profile</a>
+                <a class="buttoNav vendorProfile" href="/favourites">My favourites</a>
+                <a class="buttoNav vendorProfile" href="/logout">Sign out</a>
               {{/unless}}
             </div>  
         </div>

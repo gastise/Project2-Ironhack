@@ -3,11 +3,11 @@
 
     <div>
         {{#each products}}
-        <div style="background: url('{{this.photo}}');">
-            <a href="/product/{{this._id}}">
+        <div> 
+            <img class="productPicture2" src="{{this.photo}}" alt="{{this.product}}">
+            <a class="seeDetails2" href="/product/{{this._id}}">
                 {{this.name}}
-            </a>
+            </a> 
         </div>
-    </div>
-    {{/each}}
+        {{/each}}
 </div>
