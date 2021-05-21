@@ -10,12 +10,12 @@
 <div class="top-row">
             
         <div class="field-wrap">
-    <label for="name">Product Name:</label>
-    <input type="text" id="name" name="name" value="{{this.name}}">
+    <label for="name">Product Name</label>
+    <input type="text" id="name" name="name" value="{{this.name}}" required>
         </div>
 
         <div class="field-wrap">
-    <h3 style="color: #fa9657;" for="category">Category: </h3>
+    <h3 style="color: #fa9657;" for="category">Category</h3>
     <select name="category" id="category">
         <option value="Home & Living" {{isSelected "Home & Living" this.category}}>Home & Living</option>
         <option value="Clothing & Shoes" {{isSelected "Clothing & Shoes" this.category}}>Clothing & Shoes</option>
@@ -26,8 +26,8 @@
         </div>
 
         <div class="field-wrap">
-    <label for="description" class="label">Description: </label>
-    <textarea type="text" class="input" id="description" name="description" value="{{this.description}}"></textarea>
+    <label for="description" class="label">Description</label>
+    <textarea type="text" class="input" id="description" name="description" value="{{this.description}}" required></textarea>
         </div>
 
         <div class="field-wrap">
@@ -36,17 +36,17 @@
       Replace product photo
         <i class="icon fas fa-cloud-upload-alt fa-1x"></i>
     </label>
-    <input class="is-hidden" type="file" id="photo" name="photo">
+    <input class="is-hidden" type="file" id="photo" name="photo" required>
         </div>
 
         <div class="field-wrap">
-    <label for="price" class="label">Price in USD (including shipping): </label>
-    <input type="number" id="price" name="price" min="1" max="1000" value="{{this.price}}">
+    <label for="price" class="label">Price in USD (including shipping)</label>
+    <input type="number" id="price" name="price" min="1" max="1000" value="{{this.price}}" required>
         </div>
 
         <div class="field-wrap">
-    <label for="itemsRemaining" class="label">Current stock: </label>
-    <input type="number" id="itemsRemaining" name="itemsRemaining" min="0" max="1000" value="{{this.itemsRemaining}}">
+    <label for="itemsRemaining" class="label">Current stock</label>
+    <input type="number" id="itemsRemaining" name="itemsRemaining" min="0" max="1000" value="{{this.itemsRemaining}}" required>
         </div>
 
 
