@@ -398,6 +398,14 @@ textarea {
   margin-left: 10px;
 }
 
+.aUsPic3 {
+  width: 450px;
+  height: 450px;
+  border-radius: 20px;
+  object-fit: cover;
+  margin-left: 10px;
+}
+
 /*FOOTER STYLING*/
 
 .footer {
