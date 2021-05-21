@@ -439,6 +439,12 @@ textarea {
   background-color: #bfe8f2;
   height: 10vh;
   margin-bottom: 0px;
+
+  margin-top: 50px;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
 }
 
 .footer a {
@@ -451,4 +457,7 @@ textarea {
 
 #category {
   font-size: 20px;
+}
+.footerMargin {
+  margin-bottom:100px;
 }
