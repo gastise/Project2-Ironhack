@@ -19,8 +19,7 @@
               <h3 style="color: #fa9657;" for="category">Category</h3>
               <select name="category" id="category">
                 <option value="Home & Living" {{isSelected "Home & Living" this.category}}>Home & Living</option>
-                <option value="Clothing & Shoes" {{isSelected "Clothing & Shoes" this.category}}>Clothing & Shoes
-                </option>
+                <option value="Clothing & Shoes" {{isSelected "Clothing & Shoes" this.category}}>Clothing & Shoes</option>
                 <option value="Accessories" {{isSelected "Accessories" this.category}}>Accessories</option>
                 <option value="Personal Care" {{isSelected "Personal Care" this.category}}>Personal Care</option>
                 <option value="Food & Beverage" {{isSelected "Food & Beverage" this.category}}>Food & Beverage</option>
@@ -29,8 +28,7 @@
 
             <div class="field-wrap">
               <label for="description" class="label">Description</label>
-              <textarea type="text" class="input" id="description" name="description" value="{{this.description}}"
-                required></textarea>
+              <textarea type="text" class="input" id="description" name="description" rows="5" cols="33" style="padding-right: 130px" required>{{this.description}}</textarea>
             </div>
 
             <div class="field-wrap">

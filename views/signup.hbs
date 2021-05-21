@@ -4,105 +4,107 @@
   <p class="message {{msg.status}}">{{msg.text}}</p>
   {{/if}}
 
-<div class="form">
-      
-      <div class="tab-content">
-        <div id="signup">   
-          <h1>Sign Up for Free</h1>
-          
-          <form action="/signup" method="post" enctype="multipart/form-data">
-          
+  <div class="form">
+
+    <div class="tab-content">
+      <div id="signup">
+        <h1>Sign Up for Free</h1>
+
+        <form action="/signup" method="post" enctype="multipart/form-data">
+
           <div class="top-row">
             <div class="field-wrap">
-             <label for="firstName">First Name
+              <label for="firstName">First Name
               </label>
-      <input id="firstName" type="text" name="firstName" required placeholder="First Name">
+              <input id="firstName" type="text" name="firstName" required placeholder="First Name">
             </div>
-        
+
             <div class="field-wrap">
               <label for="lastName">Last Name
               </label>
-                    <input id="lastName" type="text" class="input-text input" name="lastName" required placeholder="Last Name">
+              <input id="lastName" type="text" class="input-text input" name="lastName" required
+                placeholder="Last Name">
             </div>
           </div>
 
           <div class="field-wrap">
-           <label for="userName">User Name</label>
-                 <input id="userName" type="text" name="userName" required placeholder="User Name">
-          </div>
-          
-          <div class="field-wrap">
-      <label for="email">Email</label>
-      <input id="email" type="email" name="email" required placeholder="email@email.com">
-          </div>
-          
-          <div class="field-wrap">
-      <label for="password">Password</label>
-      <input id="password" type="password" name="password" required placeholder="••••••">
+            <label for="userName">User Name</label>
+            <input id="userName" type="text" name="userName" required placeholder="User Name">
           </div>
 
           <div class="field-wrap">
-    <label for="photo">Picture</label>
-    <input id="photo" type="file" name="photo">
+            <label for="email">Email</label>
+            <input id="email" type="email" name="email" required placeholder="email@email.com">
           </div>
 
           <div class="field-wrap">
-      <label for="telephone">Telephone Number</label>
-      <input id="telephone" type="text" name="telephone" required placeholder="(555) 555-5555">
-          </div>        
-
-          <div class="field-wrap">
-      <label for="streetAddress">Street Address</label>
-      <input id="streetAddress" type="text" name="streetAddress" required placeholder="Calle Aguila 555">
+            <label for="password">Password</label>
+            <input id="password" type="password" name="password" required placeholder="••••••">
           </div>
 
           <div class="field-wrap">
-      <label for="city">City</label>
-      <input id="city" type="text" name="city" required placeholder="Guadalajara">
+            <label for="photo">Picture</label>
+            <input id="photo" type="file" name="photo">
           </div>
 
           <div class="field-wrap">
-      <label for="zipCode">Zip Code</label>
-      <input id="zipCode" type="text" name="zipCode" required placeholder="55555">
+            <label for="telephone">Telephone Number</label>
+            <input id="telephone" type="text" name="telephone" required placeholder="(555) 555-5555">
           </div>
 
-    <h1>
-      <p>Planning to sell your goods on Artetic?
-      <br>
-      Please fill in the 3 fields below to receive payments.</p>
-    </h1>
+          <div class="field-wrap">
+            <label for="streetAddress">Street Address</label>
+            <input id="streetAddress" type="text" name="streetAddress" required placeholder="Calle Aguila 555">
+          </div>
+
+          <div class="field-wrap">
+            <label for="city">City</label>
+            <input id="city" type="text" name="city" required placeholder="Guadalajara">
+          </div>
+
+          <div class="field-wrap">
+            <label for="zipCode">Zip Code</label>
+            <input id="zipCode" type="text" name="zipCode" required placeholder="55555">
+          </div>
+
+          <h1>
+            <p>Planning to sell your goods on Artetic?
+              <br>
+              Please fill in the 3 fields below to receive payments.</p>
+          </h1>
 
 
 
           <div class="field-wrap">
-      <label for="description">About Me</label>
-      <textarea type="text" id="description" name="description" placeholder="3rd generation shoemaker specializing in..."></textarea>
+            <label for="description">About Me</label>
+            <textarea type="text" id="description" name="description"
+              placeholder="3rd generation shoemaker specializing in..." rows="5" cols="33" style="padding-right: 130px"></textarea>
           </div>
 
           <div class="field-wrap">
-      <label for="bankName">Bank Name</label>
-      <input id="bankName" type="text" name="bankName" placeholder="Banamex">
+            <label for="bankName">Bank Name</label>
+            <input id="bankName" type="text" name="bankName" placeholder="Banamex">
           </div>
 
           <div class="field-wrap">
-      <label for="accountNumber" >Bank Account Number</label>
-      <input id="accountNumber" type="text" name="accountNumber" placeholder="123CFL928583">
+            <label for="accountNumber">Bank Account Number</label>
+            <input id="accountNumber" type="text" name="accountNumber" placeholder="123CFL928583">
           </div>
-          
-          <button type="submit" class="button button-block"/>Create Account</button>
-          
-          </form>
 
-<hr>
+          <button type="submit" class="button button-block" />Create Account</button>
 
-  <h1>Already have an account?  <a href="/login" class="button-link-form">Sign In</a></h1>
+        </form>
 
-        </div>
+        <hr>
 
-        
-      </div><!-- tab-content -->
-      
-</div> <!-- /form -->
+        <h1>Already have an account? <a href="/login" class="button-link-form">Sign In</a></h1>
+
+      </div>
+
+
+    </div><!-- tab-content -->
+
+  </div> <!-- /form -->
 
 
 </section>
