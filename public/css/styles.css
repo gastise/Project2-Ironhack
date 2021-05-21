@@ -282,6 +282,11 @@ width:100px;
 height:auto;
 margin:auto;
 }
+.introInsert a:hover{
+  color: #fa9657;
+  font-weight: bold;
+  transition: all .2s ease;
+}
 
 /* LOGIN SIGN UP */
 
