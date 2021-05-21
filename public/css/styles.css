@@ -65,6 +65,10 @@ body {
   margin: 15px;
 }
 
+.nav2 a:hover {
+  color: #fa9657;
+}
+
 .search {
   width: 100%;
   position: relative;
